@@ -5,31 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/auth.css"> <!-- Same CSS as signup -->
 </head>
 <body>
+    <header>
+        <ul></ul>
+    </header>
+    <div id="error-message" class="error-message"></div> <!-- Error/Success Message -->
+    
     <div class="login-container">
         <div class="login-card">
             <h2>Login</h2>
-            <form action="login" method="POST">
+            <form>
                 <div class="input-group">
-                    <input type="text" id="username" name="username" placeholder="Email" required>
+                    <input type="email" id="username" name="username" placeholder="Email" required>
                 </div>
-
                 <div class="input-group">
                     <input type="password" id="password" name="password" placeholder="Password" required>
                 </div>
-
                 <div class="button-group">
                     <button type="submit">Login</button>
                 </div>
-
                 <div class="extra-links">
-                    <a href="sign-up.html">Sign Up</a>
+                    <a href="signup.html">Sign Up</a>
                     <a href="#">Forgot Password?</a>
                 </div>
             </form>
         </div>
-    </div>
+
+        <div id="forgotPasswordCard" class="forgot-password-card">
+            <button class="close-btn" id="closeForgotPassword">❌</button>
+            <h2>Forgot Password</h2>
+            <form id="forgotPasswordForm">
+                <div class="input-group">
+                    <input type="email" id="resetEmail" name="resetEmail" placeholder="Enter your email" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="newPassword" name="newPassword" placeholder="New Password" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="confirmNewPassword" name="confirmNewPassword" placeholder="Confirm New Password" required>
+                </div>
+                <div class="button-group" id="close">
+                    <button type="submit">Reset Password</button>
+                </div>
+            </form>
+        </div>
+        
+    </div>    
 </body>
+<script src="js/login.js"></script>
 </html>

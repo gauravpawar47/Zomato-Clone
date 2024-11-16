@@ -146,6 +146,18 @@ h2 {
     }
 }
 
+@keyframes popDown {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0.9);
+        top: 0; /* Optional to make it slide back up */
+    }
+}
+
 @keyframes slideIn {
     from {
         transform: translateX(-30px);
@@ -171,6 +183,92 @@ h2 {
         opacity: 0;
     }
     to {
+        opacity: 1;
+    }
+}
+
+/* Error Message Styling */
+.error-message {
+    background-color: #ffcccc;  /* Light red background */
+    color: #ff0000;  /* Red text */
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    text-align: center;
+    display: none;  /* Hidden by default */
+    font-size: 14px;
+    position: fixed;  /* Fixes the position */
+    top: 10px;  /* Positions the message 10px from the top */
+    transform: translateX(-0%);  /*Adjusts the message to be exactly centered*/
+    z-index: 9999;  /* Ensures the error message is on top */
+    animation: popUp 0.5s ease-in-out, popDown 0.5s ease-in-out 1s forwards;;  /* Slide down animation */
+}
+
+.forgot-password-card {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white   ; /* Semi-transparent white */
+    padding: 40px; /* Increased padding */
+    border-radius: 12px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    animation: popUpCenter 0.5s ease-in-out;
+    width: 100%;
+    max-width: 500px; /* Enlarged width */
+    text-align: center; /* Center align content */
+}
+
+
+.forgot-password-card h2 {
+    font-size: 1.5em; /* Match font size to login card */
+    margin-bottom: 20px;
+}
+
+.forgot-password-card .button-group {
+    margin-top: 20px;
+}
+
+.forgot-password-card button {
+    background: #4CAF50; /* Green button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.forgot-password-card button:hover {
+    background: #45a049; /* Slightly darker green on hover */
+}
+
+.forgot-password-card .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 0.8em; /* Reduced size of the close button */
+    font-weight: bold;
+    color: #333;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.forgot-password-card .close-btn:hover {
+    background-color: white;
+    color:black;
+}
+
+@keyframes popUpCenter {
+    0% {
+        transform: translate(-50%, -50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(-50%, -50%);
         opacity: 1;
     }
 }

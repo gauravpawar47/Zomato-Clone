@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+    <header>
+        <ul></ul>
+    </header>
+
+    <!-- Error Message Display -->
+    <div id="error-message" class="error-message" style="display: none;">
+        <p>Passwords do not match or invalid email format. Please try again.</p>
+    </div>
+
+    <div class="signup-container">
+        <div class="login-card">
+            <h2>Sign Up</h2>
+            <form>
+                <div class="input-group">
+                    <input type="email" id="username" name="username" placeholder="Email" required>
+                </div>
+
+                <div class="input-group">
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                </div>
+
+                <div class="input-group">
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required>
+                </div>
+
+                <div class="button-group">
+                    <button type="submit">Sign Up</button>
+                </div>
+
+                <div class="extra-links">
+                    <a href="login.html">Already have an account? Log In</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/signup.js"></script>
+</body>
+</html>
