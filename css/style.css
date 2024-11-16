@@ -7,6 +7,18 @@
     font-weight: bold;
 }
 
+.nav-elements a {
+    font-size: 1.05rem !important; /* Ensure the font size is applied */
+    text-decoration: none;        /* Remove underline */
+    color: inherit;               /* Keep the link color consistent */
+}
+
+header .logo img {
+    height: 10px; /* Reduce height to make the logo smaller */
+    width: auto;  /* Maintain aspect ratio */
+}
+
+
 body {
     background: url('../img/bg.jpg') no-repeat center center fixed;
     background-size: cover; 
@@ -53,15 +65,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
-    /* background-color: rgba(211, 47, 47, 0.9);  */
+    padding: 15px 20px; /* Reduce padding to shrink the navbar */
+    width: 100%;        /* Adjust width to make it narrower */
+    margin: 0 auto;    /* Center the navbar */
     background-color: rgba(39, 34, 34, 0.9); 
     color: #fff;
     position: fixed;
-    width: 100%;
     top: 0;
     z-index: 1000;
-    transition: background-color 0.3s ease; /* Smooth transition for hover effects */
+    transition: background-color 0.3s ease;
 }
 
 /* header:hover {
@@ -69,7 +81,7 @@ header {
 } */
 
 header .logo img {
-    height: 40px;
+    height: 30px;
 }
 
 header ul {
