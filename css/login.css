@@ -9,7 +9,7 @@
 /* Body */
 body {
     font-family: 'Lato', sans-serif;
-    background-image: url('/Zomato/img/loginbg.jpg');
+    background-image: url('/img/loginbg.jpg');
     background-size: cover; /* Ensures the image covers the entire page */
     background-position: center; /* Centers the background image */
     background-attachment: fixed; /* Keeps the image fixed while scrolling */
