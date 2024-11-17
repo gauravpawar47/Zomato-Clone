@@ -1,79 +1,80 @@
 /* General reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Lato', sans-serif; 
-    font-weight: bold;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
 }
 
 .nav-elements a {
-    font-size: 1.05rem !important; /* Ensure the font size is applied */
-    text-decoration: none;        /* Remove underline */
-    color: inherit;               /* Keep the link color consistent */
+  font-size: 1.05rem !important; /* Ensure the font size is applied */
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Keep the link color consistent */
 }
+
+
 
 header .logo img {
-    height: 10px; /* Reduce height to make the logo smaller */
-    width: auto;  /* Maintain aspect ratio */
+  height: 10px; /* Reduce height to make the logo smaller */
+  width: auto; /* Maintain aspect ratio */
 }
 
-
 body {
-    background: url('../img/bg.jpg') no-repeat center center fixed;
-    background-size: cover; 
-    color: #fff;
+  background: url("../img/bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
 }
 
 /* Input Styles */
 input {
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-    font-size: 16px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin: 10px 0;
-    transition: all 0.3s ease; /* Smooth transition for hover effects */
-    background: rgba(255, 255, 255, 0.8);
-    color: #333;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px 0;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  background: rgba(255, 255, 255, 0.8);
+  color: #333;
 }
 
 input:hover {
-    border-color: #ffeb3b;
-    box-shadow: 0px 0px 8px rgba(255, 235, 59, 0.7);
+  border-color: #ffeb3b;
+  box-shadow: 0px 0px 8px rgba(255, 235, 59, 0.7);
 }
 
 input:focus {
-    outline: none;
-    border-color: #ffeb3b;
-    box-shadow: 0px 0px 12px rgba(255, 235, 59, 0.9);
+  outline: none;
+  border-color: #ffeb3b;
+  box-shadow: 0px 0px 12px rgba(255, 235, 59, 0.9);
 }
 
 input::placeholder {
-    color: rgb(61, 47, 47);
-    font-weight: bold;
+  color: rgb(61, 47, 47);
+  font-weight: bold;
 }
 
 header .logo img:hover {
-    filter: brightness(0) saturate(100%) invert(13%) sepia(92%) saturate(7484%) hue-rotate(-4deg) brightness(90%) contrast(98%);
+  filter: brightness(0) saturate(100%) invert(13%) sepia(92%) saturate(7484%)
+    hue-rotate(-4deg) brightness(90%) contrast(98%);
 }
-
 
 /* Header Styling */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px; /* Reduce padding to shrink the navbar */
-    width: 100%;        /* Adjust width to make it narrower */
-    margin: 0 auto;    /* Center the navbar */
-    background-color: rgba(39, 34, 34, 0.9); 
-    color: #fff;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px; /* Reduce padding to shrink the navbar */
+  width: 100%; /* Adjust width to make it narrower */
+  margin: 0 auto; /* Center the navbar */
+  background-color: rgba(39, 34, 34, 0.9);
+  color: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
 }
 
 /* header:hover {
@@ -81,133 +82,132 @@ header {
 } */
 
 header .logo img {
-    height: 30px;
+  height: 30px;
 }
 
 header ul {
-    list-style-type: none;
-    display: flex;
-    gap: 20px;
+  list-style-type: none;
+  display: flex;
 }
 
 header ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.1rem;
-    transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
 }
 
 header ul li a:hover {
-    color: #ffeb3b;
-    transform: scale(1.1); /* Slight enlargement on hover */
+  color: #ffeb3b;
+  transform: scale(1.1); /* Slight enlargement on hover */
 }
 
 /* Main Section Styling */
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 150px 20px;
-    color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 150px 20px;
+  color: #fff;
 }
 
 main p {
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #f1f1f1;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #f1f1f1;
 }
 
 main input[type="text"],
 main input[type="email"],
 main input[type="tel"] {
-    width: 50%;
-    max-width: 400px;
-    padding: 12px;
-    margin-top: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background: rgba(255, 255, 255, 0.8);
-    transition: all 0.3s ease;
-    font-size: 1rem;
-    color: #333;
+  width: 50%;
+  max-width: 400px;
+  padding: 12px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  color: #333;
 }
 
 main input[type="text"]:hover,
 main input[type="email"]:hover,
 main input[type="tel"]:hover {
-    border-color: #ffeb3b;
-    box-shadow: 0px 0px 10px rgba(255, 235, 59, 0.7);
+  border-color: #ffeb3b;
+  box-shadow: 0px 0px 10px rgba(255, 235, 59, 0.7);
 }
 
 main input[type="text"]:focus,
 main input[type="email"]:focus,
 main input[type="tel"]:focus {
-    outline: none;
-    border: 1px solid #ffeb3b;
-    box-shadow: 0px 0px 12px rgba(255, 235, 59, 0.9);
+  outline: none;
+  border: 1px solid #ffeb3b;
+  box-shadow: 0px 0px 12px rgba(255, 235, 59, 0.9);
 }
 
 /* Footer Styling */
 footer {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    text-align: center;
-    padding: 15px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    transition: background-color 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  transition: background-color 0.3s ease;
 }
 
 footer:hover {
-    background-color: rgba(0, 0, 0, 1);
+  background-color: rgba(0, 0, 0, 1);
 }
 
 /* Animations */
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @keyframes popUp {
-    from {
-        opacity: 0;
-        transform: scale(0.9);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 main input[type="text"],
 main input[type="email"],
 main input[type="tel"] {
-    animation: popUp 0.5s ease-out;
+  animation: popUp 0.5s ease-out;
 }
 
-#logo{
-    animation: slideIn 0.45s ease-in-out;
+#logo {
+  animation: slideIn 0.45s ease-in-out;
 }
 
 /* main input[type="text"] {
@@ -215,33 +215,33 @@ main input[type="tel"] {
 } */
 
 ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
 a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
-    padding: 5px 0;
-    display: inline-block;
-    position: relative;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 5px 0;
+  display: inline-block;
+  position: relative;
 }
 
 a::after {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    left: 50%;
-    transform: translateX(-25%) scaleX(0);
-    transform-origin: center;
-    height: 1px;
-    width: 100%;
-    background-color: yellow;
-    transition: transform 0.2s ease-in-out;
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-25%) scaleX(0);
+  transform-origin: center;
+  height: 1px;
+  width: 100%;
+  background-color: yellow;
+  transition: transform 0.2s ease-in-out;
 }
 
 a:hover::after {
-    transform: translateX(-50%) scaleX(1);
+  transform: translateX(-50%) scaleX(1);
 }

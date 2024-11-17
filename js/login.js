@@ -92,6 +92,11 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
+        if (newPassword.length < 6) {
+            showMessage(" ❌ Password must be at least 6 characters long", "error");
+            return;
+        }
+
         // Update password in localStorage
         localStorage.setItem("password", newPassword);
         showMessage("✔️ Password reset successful!", "success");
