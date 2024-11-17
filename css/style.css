@@ -52,7 +52,7 @@ input:focus {
 }
 
 input::placeholder {
-  color: rgb(61, 47, 47);
+  color: rgb(57, 61, 47);
   font-weight: bold;
 }
 

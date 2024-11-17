@@ -1,0 +1,148 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container Styling */
+.container {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+}
+
+.left-arrow {
+    width: 17px;
+    height: auto;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 10; /* Ensures it is above other elements */
+    /* filter: invert(100%); White color */
+    transition: filter 0.3s ease, transform 0.2s ease;
+    /* border: 1px solid red; Debugging border (remove later) */
+}
+
+.left-arrow:hover {
+    filter: invert(19%) sepia(91%) saturate(6671%) hue-rotate(357deg) brightness(103%) contrast(103%);
+    transform: scale(1.1); /* Slightly enlarges on hover */
+}
+
+/* User Photo Styling */
+.user-photo-container {
+  display: flex;
+  justify-content: center; /* Center-align horizontally */
+  margin-bottom: 10px; /* Reduce space below the photo */
+  margin-top: 20px; /* Position closer to the top */
+}
+
+.user-photo {
+  width: 80px; /* Adjust size as needed */
+  height: 80px;
+  border-radius: 50%; /* Circular photo */
+  object-fit: cover; /* Ensures the image fits properly */
+  /* border: 2px solid #ff0000; Optional red border */
+}
+
+/* Labels Styling */
+.labels {
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 10px; /* Space between labels and inputs */
+}
+
+/* Input Group Styling */
+.input-group {
+  display: flex;
+  flex-direction: column; /* Arrange inputs vertically */
+  align-items: center;
+  gap: 15px; /* Space between fields */
+  margin-bottom: 20px; /* Add spacing below the input group */
+}
+
+.input-group input[type="text"],
+.input-group input[type="tel"] {
+  width: 200px; /* Reduced width */
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+.input-group input[type="text"]:focus,
+.input-group input[type="tel"]:focus {
+  border-color: #ff0000;
+  box-shadow: 0 0 5px rgba(255, 0, 0, 0.4);
+}
+
+/* Gender Selection Group */
+.gender-group {
+  display: flex;
+  gap: 10px; /* Space between gender options */
+}
+
+.gender-group label {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Save Button */
+.button-group {
+  display: flex;
+  justify-content: center; /* Center-align button */
+  margin-top: 20px;
+}
+
+/* Form Group Alignment */
+form {
+  display: flex;
+  flex-direction: column; /* Ensure vertical stacking */
+  gap: 10px; /* Space between groups */
+}
+
+.gender-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gender-group input[type="radio"] {
+    display: none; /* Hide default radio button */
+}
+
+.gender-group label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #f0f0f0;
+    border-radius: 50%; /* Circular buttons */
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.gender-group input[type="radio"]:checked + label {
+    background-color: #ff0000; /* Selected color */
+    border-color: #ff0000;
+    color: #ffffff;
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+.gender-group label:hover {
+    background-color: #ffe6e6; /* Subtle hover effect */
+}

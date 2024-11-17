@@ -1,274 +1,274 @@
 /* Basic Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
 }
 
 /* Body */
 body {
-    font-family: 'Lato', sans-serif;
-    background-image: url('/img/loginbg.jpg');
-    background-size: cover; /* Ensures the image covers the entire page */
-    background-position: center; /* Centers the background image */
-    background-attachment: fixed; /* Keeps the image fixed while scrolling */
-    height: 100vh; /* Full viewport height */
-    width: 100vw; /* Full viewport width */
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: fadeIn 0.5s ease-out;
+  font-family: "Lato", sans-serif;
+  background-image: url("/img/loginbg.jpg");
+  background-size: cover; /* Ensures the image covers the entire page */
+  background-position: center; /* Centers the background image */
+  background-attachment: fixed; /* Keeps the image fixed while scrolling */
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.5s ease-out;
 }
 
 body::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7); /* Dark overlay */
-    z-index: -5; /* Ensure the overlay is below the content */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+  z-index: -5; /* Ensure the overlay is below the content */
 }
 
 /* Login Card */
 .login-card {
-    background-color: rgba(255, 255, 255, 0.9); /* Transparent white background */
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    max-width: 400px;
-    text-align: center;
-    opacity: 0;
-    animation: popUp 1s forwards 0.5s;
-    transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
+  background-color: rgba(255, 255, 255, 0.9); /* Transparent white background */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  opacity: 0;
+  animation: popUp 1s forwards 0.5s;
+  transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
 }
 
 /* Hover effect for Login Card */
 .login-card:hover {
-    box-shadow: 0 8px 40px rgba(255, 0, 0, 0.6); /* Bold red shadow */
-    transform: translateY(-5px); /* Slight raise effect */
-    border: 0.5px #FF0000; /* Bold red border */
+  box-shadow: 0 8px 40px rgba(255, 0, 0, 0.6); /* Bold red shadow */
+  transform: translateY(-5px); /* Slight raise effect */
+  border: 0.5px #ff0000; /* Bold red border */
 }
 
 /* Heading */
 h2 {
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: #333;
-    font-weight: 700;
-    animation: slideIn 1s ease-out;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+  font-weight: 700;
+  animation: slideIn 1s ease-out;
 }
 
 /* Input Fields */
 .input-group {
-    margin-bottom: 20px;
-    text-align: center;
-    animation: slideIn 1s ease-out;
+  margin-bottom: 20px;
+  text-align: center;
+  animation: slideIn 1s ease-out;
 }
 
 .input-group input {
-    width: 80%;
-    padding: 12px;
-    font-size: 14px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    outline: none;
-    transition: border-color 0.3s ease;
-    animation: fadeInInput 1s ease-out;
+  width: 80%;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  animation: fadeInInput 1s ease-out;
 }
 
 /* Focused Input Fields */
 .input-group input:focus {
-    border-color: #FF0000; /* Red border on focus */
+  border-color: #ff0000; /* Red border on focus */
 }
 
 /* Button */
 .button-group button {
-    width: 80%;
-    padding: 12px;
-    font-size: 16px;
-    background-color: #FF0000; /* Bold red button */
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    animation: fadeInButton 1s ease-out 1s;
+  width: 80%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #ff0000; /* Bold red button */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  animation: fadeInButton 1s ease-out 1s;
 }
 
 /* Button Hover */
 .button-group button:hover {
-    background-color: #cc0000; /* Darker red on hover */
-    transform: scale(1.05); /* Slight scaling effect on hover */
+  background-color: #cc0000; /* Darker red on hover */
+  transform: scale(1.05);
 }
 
 /* Extra Links */
 .extra-links {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .extra-links a {
-    color: #FF0000; /* Red links */
-    text-decoration: none;
-    font-size: 14px;
-    margin: 0 10px;
-    transition: color 0.3s ease;
+  color: #ff0000; /* Red links */
+  text-decoration: none;
+  font-size: 14px;
+  margin: 0 10px;
+  transition: color 0.3s ease;
 }
 
 .extra-links a:hover {
-    color: #cc0000; /* Dark red on hover */
-    text-decoration: underline;
+  color: #cc0000; /* Dark red on hover */
+  text-decoration: underline;
 }
 
 /* Animations */
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes popUp {
-    from {
-        opacity: 0;
-        transform: scale(0.9);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 @keyframes popDown {
-    from {
-        opacity: 1;
-        transform: scale(1);
-    }
-    to {
-        opacity: 0;
-        transform: scale(0.9);
-        top: 0; /* Optional to make it slide back up */
-    }
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.9);
+    top: 0; /* Optional to make it slide back up */
+  }
 }
 
 @keyframes slideIn {
-    from {
-        transform: translateX(-30px);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
+  from {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 @keyframes fadeInInput {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeInButton {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Error Message Styling */
 .error-message {
-    background-color: #ffcccc;  /* Light red background */
-    color: #ff0000;  /* Red text */
-    padding: 10px;
-    border-radius: 5px;
-    margin: 10px 0;
-    text-align: center;
-    display: none;  /* Hidden by default */
-    font-size: 14px;
-    position: fixed;  /* Fixes the position */
-    top: 10px;  /* Positions the message 10px from the top */
-    transform: translateX(-0%);  /*Adjusts the message to be exactly centered*/
-    z-index: 9999;  /* Ensures the error message is on top */
-    animation: popUp 0.5s ease-in-out, popDown 0.5s ease-in-out 1s forwards;;  /* Slide down animation */
+  background-color: #ffcccc; /* Light red background */
+  color: #ff0000; /* Red text */
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+  text-align: center;
+  display: none; /* Hidden by default */
+  font-size: 14px;
+  position: fixed; /* Fixes the position */
+  top: 10px; /* Positions the message 10px from the top */
+  transform: translateX(-0%); /*Adjusts the message to be exactly centered*/
+  z-index: 9999; /* Ensures the error message is on top */
+  animation: popUp 0.5s ease-in-out, popDown 0.5s ease-in-out 1s forwards; /* Slide down animation */
 }
 
 .forgot-password-card {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: white   ; /* Semi-transparent white */
-    padding: 40px; /* Increased padding */
-    border-radius: 12px;
-    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
-    z-index: 9999;
-    animation: popUpCenter 0.5s ease-in-out;
-    width: 100%;
-    max-width: 500px; /* Enlarged width */
-    text-align: center; /* Center align content */
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white; /* Semi-transparent white */
+  padding: 40px; /* Increased padding */
+  border-radius: 12px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  animation: popUpCenter 0.5s ease-in-out;
+  width: 100%;
+  max-width: 500px; /* Enlarged width */
+  text-align: center; /* Center align content */
 }
 
-
 .forgot-password-card h2 {
-    font-size: 1.5em; /* Match font size to login card */
-    margin-bottom: 20px;
+  font-size: 1.5em; /* Match font size to login card */
+  margin-bottom: 20px;
 }
 
 .forgot-password-card .button-group {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .forgot-password-card button {
-    background: #4CAF50; /* Green button */
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1em;
-    cursor: pointer;
+  background: #4caf50; /* Green button */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
 }
 
 .forgot-password-card button:hover {
-    background: #45a049; /* Slightly darker green on hover */
+  background: #45a049; /* Slightly darker green on hover */
 }
 
 .forgot-password-card .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 0.8em; /* Reduced size of the close button */
-    font-weight: bold;
-    color: #333;
-    background: none;
-    border: none;
-    cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 0.8em; /* Reduced size of the close button */
+  font-weight: bold;
+  color: #333;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .forgot-password-card .close-btn:hover {
-    background-color: white;
-    color:black;
+  background-color: white;
+  color: black;
 }
 
 @keyframes popUpCenter {
-    0% {
-        transform: translate(-50%, -50%);
-        opacity: 0;
-    }
-    100% {
-        transform: translate(-50%, -50%);
-        opacity: 1;
-    }
+  0% {
+    transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
 }
+
